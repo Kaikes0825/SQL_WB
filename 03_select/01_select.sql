@@ -4,10 +4,10 @@
 
 -- Vorbereitung
 
-
+DROP TABLE IF EXISTS boo.contacts;
 
 -- 1. Tabelle erstellen
-CREATE TABLE contacts (
+CREATE TABLE IF NOT EXISTS boo.contacts (
     id INT NOT NULL,
     name VARCHAR(100),
     address VARCHAR(255),
@@ -17,6 +17,7 @@ CREATE TABLE contacts (
     state VARCHAR(50),
     city VARCHAR(100)
 );
+DESCRIBE boo.contacts;
 
 -- 2. 50 Datensätze mit gemischten Namen (deutsch, türkisch, arabisch) einfügen
 INSERT INTO contacts (id, name, address, phone, email, age, state, city) VALUES
@@ -74,3 +75,5 @@ INSERT INTO contacts (id, name, address, phone, email, age, state, city) VALUES
 (48, 'Kai Wagner', 'Schillerplatz 48', '030/111222', 'kai.wagner@example.de', 32, 'Berlin', 'Berlin'),
 (49, 'Tarek Bouzid', 'Rathausplatz 49', '0711/222333', 'tarek.bouzid@example.de', 30, 'Baden-Württemberg', 'Stuttgart'),
 (50, 'Melis Erdem', 'Hauptplatz 50', '040/333444', 'melis.erdem@example.de', 25, 'Hamburg', 'Hamburg');
+
+SELECT * FROM boo.contacts
