@@ -76,4 +76,4 @@ INSERT INTO contacts (id, name, address, phone, email, age, state, city) VALUES
 (49, 'Tarek Bouzid', 'Rathausplatz 49', '0711/222333', 'tarek.bouzid@example.de', 30, 'Baden-Württemberg', 'Stuttgart'),
 (50, 'Melis Erdem', 'Hauptplatz 50', '040/333444', 'melis.erdem@example.de', 25, 'Hamburg', 'Hamburg');
 
-SELECT * FROM boo.contacts
+SELECT * FROM boo.contacts;
