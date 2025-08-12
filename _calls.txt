@@ -12,4 +12,4 @@ source 02_tables\04_tables.sql
 
 #select
 source 03_select\01_select.sql
-
+source 03_select\02_select.sql
