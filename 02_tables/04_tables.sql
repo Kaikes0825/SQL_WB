@@ -25,8 +25,8 @@ CREATE TABLE IF NOT EXISTS kunde
 -- Struktur anzeigen
 DESCRIBE kunde;
 
--- Datensätze/Zeilen
-INSERT INTO kunde(k_id,k_name,k_alter,k_mail,k_pw) VALUES(DEFAULT,"Meier", 28, "meier@web.de", 'maier123');
+-- Datensätze/Zeilen / pw IMMER hashen! !
+INSERT INTO kunde(k_id,k_name,k_alter,k_mail,k_pw) VALUES(DEFAULT,"Meier", 28, "meier@web.de", SHA2('maier123',256));
 INSERT INTO kunde(k_id,k_name,k_alter,k_mail,k_pw) VALUES(DEFAULT,"Hussein", 32, "hussein@web.de", 'hussler4');
 INSERT INTO kunde(k_id,k_name,k_alter,k_mail,k_pw) VALUES(DEFAULT,"Li", 26,"li@web.de", 'litze');
 INSERT INTO kunde(k_id,k_name,k_alter,k_mail,k_pw) VALUES(DEFAULT,"Li", 40,"li2@web.de", 'lianli');
