@@ -30,5 +30,5 @@ SELECT
         id,
         city
 FROM languages.contacts
-WHERE city = LIKE '%furt'
+WHERE city LIKE '%furt'
 ;
