@@ -5,7 +5,19 @@
 
 -- basic
 SELECT
-        id,
-        email
-        FROM boo.contacts
+
+        FROM languages.contacts
         ;
+
+SELECT
+      id,
+      email
+FROM languages.contacts
+;
+
+SELECT
+        id,
+        city
+FROM languages.contacts
+WHERE city = 'Berlin' 
+;       
